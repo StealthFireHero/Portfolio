@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,148 +7,128 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="all-cards">
-            <div class="presentation-card card">
-                <div class="moi">
-                    <h1>Quentin</h1>
-                    <h2>Lycéen passionné d'informatique</h2>
-                    <div class="presentation-content">
-                        <div class="gauche">
-                            <ul>
-                                <li>Cybersécurité</li>
-                                <li>Développement</li>
-                                <li>Pentest</li>
-                                <li>DevOps</li>
-                            </ul>   
-                        </div>
-                        <div class="droite">
-                            <img src="assets/portrait.png" alt="Moi" class="photo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experience-card card">
-                <h3>Mon Profil</h3>
-                <h4>En Terminale (Spécialités Numérique et Sciences Informatiques & Mathématiques).</h4>
-                <ul>
-                    <li><strong>Compétences</strong> : Développement Python, sécurité, scripts & automatisation.</li>
-                    <li><strong>Expérience</strong> : Responsable Opérationnel - HypeProtect (Modération & gestion)</li>
-                    <li><strong>Objectif</strong> : Intégrer une formation supérieure en informatique (BUT / École d'Ingénieurs) axée cybersécurité et dev.</li>
+    <main class="all-cards">
+        <section class="presentation-card card">
+            <h1>Quentin</h1>
+            <h2>Lycéen passionné d'informatique</h2>
+            <div class="presentation-content">
+                <ul class="skills">
+                    <li>Cybersécurité</li>
+                    <li>Développement</li>
+                    <li>Pentest</li>
+                    <li>DevOps</li>
                 </ul>
-                <div class="tech-badges">
-                    <div class ="gauche">
-                        <span class="badge">Python</span>
-                        <span class="badge">HTML / CSS</span>
-                        <span class="badge">Linux Mint</span>
-                    </div>
-                    <div class ="droite">
-                        <span class="badge">Git & GitHub</span>
-                        <span class="badge">LaTeX</span>
-                        <span class="badge">Cybersécurité</span>
-                    </div>
-                </div>
+                <img src="assets/portrait.png" alt="Moi" class="photo" width="400" height="500">
             </div>
-            <div class="projet-hypeprotect card">
-                 <img src="assets/HypeProtect.jpg" alt="HypeProtect" class="fond">
-                 <div class="logo-hypeprotect">
-                    <a href="https://hypeprotect.fr/"><img src="https://cdn.hypeprotect.fr/attachments/logo/black.webp" alt="logo-hypeprotect" class="logo"></a>
-                    <h3>Responsable Opérationnel</h3>
-                </div>
+        </section>
 
+        <section class="experience-card card">
+            <h3>Mon Profil</h3>
+            <h4>En Terminale (Spécialités Numérique et Sciences Informatiques &amp; Mathématiques).</h4>
+            <ul class="profil-liste">
+                <li><strong>Compétences</strong> : Développement Python, sécurité, scripts &amp; automatisation.</li>
+                <li><strong>Expérience</strong> : Responsable Opérationnel - HypeProtect (Modération &amp; gestion)</li>
+                <li><strong>Objectif</strong> : Intégrer une formation supérieure en informatique (BUT / École d'Ingénieurs) axée cybersécurité et dev.</li>
+            </ul>
+            <div class="tech-badges">
+                <span class="badge">Python</span>
+                <span class="badge">HTML / CSS</span>
+                <span class="badge">Linux Mint</span>
+                <span class="badge">Git &amp; GitHub</span>
+                <span class="badge">LaTeX</span>
+                <span class="badge">Cybersécurité</span>
             </div>
-                <div class="special1-card card">
+        </section>
 
-                    <div class="mon-parcours">
-                        
-                        <div class="stage-3ieme etude">
-                            <div class="circle"><img src="assets/france_travail.png" alt="France Travail" class="logo-etude"></div>
-                            <span class="label">Stage 3ème</span>
-                        </div>
-                        <div class="stage-2nd etude">
-                            <div class="circle"><img src="assets/capgemini.png" alt="Capgemini" class="logo-etude"></div>
-                            <div class="texte-survol">
-                                <h3><strong>Capgemini</strong></h3>
-                            </div>
-                            <span class="label">Stage 2nde</span>
-                        </div>
-                        <div class="terminale etude">
-                            <div class="circle"><img src="assets/joffre.png" alt="Terminale" class="logo-etude"></div>
-                            <span class="label">En terminale</span>
-                        </div>
-                    </div>
-                </div>
-            <div class="special2-card card cv-card">
-                <h3>Mon CV</h3>
-                <p>Retrouvez mon parcours complet et mes compétences au format PDF.</p>
-                <a href="assets/CV_Quentin.pdf" download="CV_Quentin.pdf" class="btn-cv">
-                    📥 Télécharger mon CV
+        <section class="projet-hypeprotect card">
+            <img src="assets/HypeProtect.jpg" alt="HypeProtect" class="fond" decoding="async">
+            <div class="logo-hypeprotect">
+                <a href="https://hypeprotect.fr/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.hypeprotect.fr/attachments/logo/black.webp" alt="logo-hypeprotect" decoding="async">
                 </a>
+                <h3>Responsable Opérationnel</h3>
             </div>
-            <div class="contact-card card">
-                <h3>Contact</h3>
-                <div class="contact">
-                    <a href="https://discord.gg/Q79Wz4VGZX"><img src="assets/discord.png" alt="Discord"></a>
-                    <a href="https://www.instagram.com/quentinqrm/"><img src="assets/instagram.png" alt="Instagram"></a>
-                    <a href="https://github.com/StealthFireHero"><img src="assets/github.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/quentin-rabat34"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-                </div>
+        </section>
+
+        <section class="special1-card card">
+            <div class="etude">
+                <div class="circle"><img src="assets/france_travail.png" alt="France Travail" class="logo-etude" loading="lazy"></div>
+                <span class="label">Stage 3ème</span>
             </div>
-            <div class="projet-card card">
-                <div class = "projet">
-                    <h1>Projets</h1>
-                    <div class="entete-carte-py">
-                        <h2>Python</h2>
-                        <img src="assets/python_logo.png" alt="logo-python" class="logo-python">
-                    </div>  
-                    <div class="projet-python">
-                        
-                        <ul>
-                            <li>Bot discord brawl stars</li>
-                            <li>Bot discord personnel</li>
-                            <li>Encodage & Décodage César</li>
-                            <li>Ping-Pong</li>
-                            <li>Collecteur de fruits</li>
-                            <li>Jeu du pendu</li>
-                            <li>Cookie Clicker</li>
-                        </ul>
-                        <div class="api">
-                            <h3>API utilisées :</h3>
-                        <ul>
-                            <li>Discord.py</li>
-                            <li>Supercell Developer API</li>
-                            <li>RoyalAPI</li>
-                            <li>NASA Open APIs</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class = "entete-carte-web">
-                        <h2>WEB</h2>
-                        <img src="assets/html_css_logo.png" alt="logo-web" class="logo-web">
-                    </div>
-                    <div class="projet-web">
-        
-                        <ul>
-                            <li>Tu savais que</li>
-                            <li>Site d'échec</li>
-                            <li>Portfolio</li>  
-                        </ul>
-                    </div>
-                    <div class = "entete-carte-lateX">
-                        <h2>LateX</h2>
-                        <img src="assets/latex_logo.png" alt="logo-lateX" class="logo-lateX">
-                    </div>
-                    <div class="projet-lateX">
-        
-                        <ul>
-                            <li>L'histoire de la cryptographie (en cours)</li>
-                            <li>17 fiches de philosophie</li>
-                        </ul>
-                    </div>
-                </div>
-                
+            <div class="etude">
+                <div class="circle"><img src="assets/capgemini.png" alt="Capgemini" class="logo-etude" loading="lazy"></div>
+                <div class="texte-survol"><strong>Capgemini</strong></div>
+                <span class="label">Stage 2nde</span>
             </div>
-        </div>
+            <div class="etude">
+                <div class="circle"><img src="assets/joffre.png" alt="Terminale" class="logo-etude" loading="lazy"></div>
+                <span class="label">En terminale</span>
+            </div>
+        </section>
+
+        <section class="special2-card card cv-card">
+            <h3>Mon CV</h3>
+            <p>Retrouvez mon parcours complet et mes compétences au format PDF.</p>
+            <a href="assets/CV_Quentin.pdf" download="CV_Quentin.pdf" class="btn-cv">
+                📥 Télécharger mon CV
+            </a>
+        </section>
+
+        <section class="contact-card card">
+            <h3>Contact</h3>
+            <div class="contact">
+                <a href="https://discord.gg/Q79Wz4VGZX" target="_blank" rel="noopener noreferrer"><img src="assets/discord.png" alt="Discord" loading="lazy"></a>
+                <a href="https://www.instagram.com/quentinqrm/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.png" alt="Instagram" loading="lazy"></a>
+                <a href="https://github.com/StealthFireHero" target="_blank" rel="noopener noreferrer"><img src="assets/github.png" alt="GitHub" loading="lazy"></a>
+                <a href="https://www.linkedin.com/in/quentin-rabat34" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+            </div>
+        </section>
+
+        <section class="projet-card card">
+            <h2 class="titre-projets">Projets</h2>
+
+            <div class="entete-carte">
+                <h3>Python</h3>
+                <img src="assets/python_logo.png" alt="logo-python" loading="lazy">
+            </div>
+            <ul class="projet-python">
+                <li>Bot discord brawl stars</li>
+                <li>Bot discord personnel</li>
+                <li>Encodage &amp; Décodage César</li>
+                <li>Ping-Pong</li>
+                <li>Collecteur de fruits</li>
+                <li>Jeu du pendu</li>
+                <li>Cookie Clicker</li>
+            </ul>
+            <div class="api">
+                <h4>API utilisées :</h4>
+                <ul>
+                    <li>Discord.py</li>
+                    <li>Supercell Developer API</li>
+                    <li>RoyalAPI</li>
+                    <li>NASA Open APIs</li>
+                </ul>
+            </div>
+
+            <div class="entete-carte">
+                <h3>WEB</h3>
+                <img src="assets/html_css_logo.png" alt="logo-web" loading="lazy">
+            </div>
+            <ul class="projet-web">
+                <li>Tu savais que</li>
+                <li>Site d'échec</li>
+                <li>Portfolio</li>
+            </ul>
+
+            <div class="entete-carte">
+                <h3>LateX</h3>
+                <img src="assets/latex_logo.png" alt="logo-lateX" loading="lazy">
+            </div>
+            <ul class="projet-lateX">
+                <li>L'histoire de la cryptographie (en cours)</li>
+                <li>17 fiches de philosophie</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
