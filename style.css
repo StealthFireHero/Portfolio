@@ -1,0 +1,375 @@
+
+:root {
+    --or-fond: #f7f1e1;
+    --or-bordure: #f3e5ab;
+    --or-brillant: #0f172a;
+    --or-subtitle: #0f172a;
+    --or-texte: #5C3E00;
+}
+main {
+    align-items: center;
+}
+
+.card{
+    border-radius: 10px;
+}
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 80vh;
+    grid-template-areas:
+        "presentation experience experience projet"
+        "presentation experience experience projet"
+        "projet-hypeprotect special1 special1 projet"
+        "special2 special2 contact projet";
+        
+    gap: 16px;
+    margin: 50px auto;
+    max-width: 1200px;
+    max-height: auto;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation-card { 
+    grid-area: presentation;
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+}
+.experience-card { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: experience;
+}
+
+.projet-hypeprotect { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: projet-hypeprotect;
+    position: relative;
+    display: grid;
+}
+.special1-card { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: special1;
+}
+.special2-card { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: special2;
+}
+.contact-card { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: contact;
+}
+.projet-card { 
+    background: var(--or-fond);
+    border: 2px solid var(--or-bordure);
+    grid-area: projet;
+}
+
+/* --- Carte de Présentation --- */
+
+.moi h1 {
+    justify-self: center;
+    color: var(--or-brillant);
+}
+.moi h2 {
+    margin-left: 20px;
+    color: var(--or-subtitle);
+}
+.moi .presentation-content {
+    margin-left: 20px;
+}
+.moi .presentation-content ul {
+    padding: 0;
+    list-style-image: linear-gradient(to left bottom, gold, plum);
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.moi .presentation-content{
+    align-self: start;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.moi .photo {
+    margin-top: 55px;
+    margin-left: -30px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--or-bordure);
+   
+}
+
+/* --- Carte HypeProtect --- */
+.projet-hypeprotect .fond{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: blur(1.5px);
+
+}
+.projet-hypeprotect .logo-hypeprotect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.projet-hypeprotect .logo-hypeprotect h3 {
+    color: var(--or-texte);
+    height: auto;
+    text-decoration: underline;
+}
+.projet-hypeprotect a {
+    width: 250px;
+    height: auto;
+    z-index: 2;
+}
+.projet-hypeprotect a img {
+    width: 100%;
+    height: auto;
+}
+
+/* --- Carte projet --- */
+.projet-python li {
+    color: var(--or-brillant);
+}
+.projet-web li {
+    color: var(--or-brillant);
+}
+.projet-lateX li {
+    color: var(--or-brillant);
+}
+.projet-python li::marker {
+    content: "🐍 "; 
+}
+.api li::marker {
+    content: "🔗 "; 
+}
+.api h3 {
+    margin-left: 20px;
+    text-decoration: underline;
+}
+.entete-carte-py  {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entete-carte-py img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.projet-web li::marker {
+    content: "🌐 "; 
+}
+
+.entete-carte-web  {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entete-carte-web img {
+  width: 65px;
+  height: 50px;
+}
+
+.projet-lateX li::marker {
+    content: "📄 "; 
+}
+.entete-carte-lateX  {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entete-carte-lateX img {
+  width: 100px;
+  height: 50px;
+}
+.projet h1 {
+    justify-self: center;
+    color: var(--or-brillant);
+    text-decoration: underline;
+}
+
+/* --- Contact --- */
+.contact-card h3 {
+    justify-self: center;
+    color: var(--or-brillant);
+    text-decoration: underline;
+}
+.contact {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    
+}
+.contact img {
+    justify-self: center;
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+/* --- Mon parcours --- */
+
+.mon-parcours {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.circle {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 2px solid #d4af37;  /* Bordure dorée */
+    background-color: #f7f4ea; /* Fond beige de ton site */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #855800;
+}
+.logo-etude {
+    width: 110px;
+    height: 110px;
+}
+.etude {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.texte-survol {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0); 
+    color: var(--or-subtitle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+ 
+}
+
+/* 4. Déclencheur au survol du bloc */
+.stage-2nd:hover .texte-survol {
+  opacity: 1;
+}
+
+/* --- Experience --- */
+.experience-card h3 {
+    justify-self: center;
+    color: var(--or-brillant);
+    text-decoration: underline;
+}
+.experience-card h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: var(--or-subtitle);
+}
+
+.experience-card ul {
+    padding: 0;
+    list-style-image: linear-gradient(to left bottom, gold, plum);
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.experience-card ul li {
+    color: var(--or-texte);
+    margin-bottom: 20px;
+}
+
+
+.tech-badges {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+    padding-top: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    
+}
+.badge {
+    background-color: #ede6d0;
+    color: #1e293b;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.gauche, .droite {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- CV --- */
+.cv-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.cv-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--or-brillant);
+  text-decoration: underline;
+}
+
+.cv-card p {
+  font-size: 12px;
+  color: var(--or-texte);
+  margin-bottom: 12px;
+}
+
+.btn-cv {
+  display: inline-block;
+  background-color: #ede6d0;
+  color: #1e293b;
+  border: 2px solid #d4af37;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.btn-cv:hover {
+  background-color: #d4af37;
+  color: #ffffff;
+}
