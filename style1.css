@@ -1,0 +1,46 @@
+/* Style minimaliste pour la page des mentions légales */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fdfbf7; /* Ajuste selon la couleur de fond de ton portfolio */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #111;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
